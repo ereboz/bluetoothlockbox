@@ -103,21 +103,35 @@ body {
 
 //<editor-fold desc="Brochure Columns">
 
+// look for .page-wrapper and a class with "lockbox" in the page wrapper
+// then a "box" to style.
+
+.products {
+    .product-wrapper {
+        &:last-child {
+            .product-image-wrapper {
+                
+                @media @tablet-min {
+                    margin-top: 90px;
+                }
+                
+                @media @desktop-min {
+                    margin-top: 144px;
+                }
+            }
+        }
+    }
+}
+
 .page-wrapper[class*="lockbox"] {
-    
     font-family: @font-roboto;
-    
-    // look for .page-wrapper and a class with "brochure" in the page wrapper
-    // then a "box" to style.
     
     .box {
         width: 100%;
         float: left;
-        border: 1px dotted @black;
         padding: 10px;
         margin-bottom: 20px;
         color: lighten(@black, 20%);
-        background-color: lighten(@black, 95%);
         overflow: hidden;
         .rounded-corners();
         
@@ -125,64 +139,28 @@ body {
             min-height: 275px;
         }
     }
-    
-    a {
-        &:link {
-            color: @blue;
-            text-decoration: none;
-        }
-        &:hover {
-            color: lighten(@orange, 5%);
-        }
-        &:visited {
-            color: darken(@orange, 5%);
-        }
-        &:active {
-            color: blue;
-        }
-    }
-    
-    //.topic-heading {
-    //    min-height: 75px;
-    //    width: 100%;
-    //    color: @white;
-    //    background-color: black;
-    //    text-align: center;
-    //    .rounded-corners();
-    //
-    //    .title-wrap {
-    //        padding-top: 10px;
-    //        font-size: 24px;
-    //
-    //        .reg {
-    //            margin-left: -5px;
-    //            font-size: 12px;
-    //            vertical-align: super;
-    //        }
-    //    }
-    //}
-    
-    .topic-sub-heading {
-        margin-top: 10px;
-        max-height: 25px;
-        width: 100%;
-        color: @white;
-        background-color: lighten(@black, 35%);
-        text-align: center;
-        font-size: 18px;
-    }
-    
-    .page-separator {
-        margin-bottom: 40px;
-    }
-    
 }
+
+.primary {
+    div[class$="wrapper"] {
+        &:last-child {
+            @media @tablet-min {
+                margin-top: 90px;
+            }
+    
+            @media @desktop-min {
+                margin-top: 144px;
+            }
+        }
+    }
+}
+
 
 // look for value ending in wrapper inside bluetooth-lockbox
 // each main section, image wrappers and key-value pair wrappers will get this margin
 .bluetooth-lockbox {
     div[class$="wrapper"] {
-        margin-bottom: 15px;
+        //margin-bottom: 15px;
     }
 }
 
@@ -192,216 +170,156 @@ body {
     text-align: center;
 }
 
-// ************ First Wrapper Column ************
-.first-wrapper {
-    
-    .make-sm-column(6);     // 768px (min)
-}
-
-// ************ Second Wrapper Column ************
-.second-wrapper {
-    
-    .make-sm-column(6);     // 768px (min)
-}
-
-// ************ Third Wrapper Column ************
-.third-wrapper {
-    .make-sm-column(3);     // 768px (min)
-}
-
-// ************ Fourth Wrapper Column ************
-.fourth-wrapper {
-    .make-sm-column(3);     // 768px (min)
-}
-
-// ************ Globals for 3 columns ************
-.first-wrapper, .second-wrapper, .third-wrapper, .fourth-wrapper {
-    
-    @media @desktop-min {
-        min-height: 400px;
+.product-wrapper {
+    @media @tablet-min {
+        min-height: 547px;
     }
     
-    .img-wrapper {
-        img {
-            margin: 25px auto;
+    &:first-child {
+        border-right: 1px solid lighten(@black, 85%);
+    }
+}
+
+.primary {
+    
+    .product-image-wrapper {
+        float: left;
+        width: 50%;
+    }
+    
+    .product-desc-wrapper {
+        float: left;
+        width: 50%;
+
+        span {
+            display: block;
+        }
+        
+        .product-desc {
+            font-size: 23px;
+            font-weight: 700;
+            line-height: 32px;
+            padding: 0 50px;
+            text-transform: uppercase;
+            
+            span:nth-child(2) {
+                font-size: 32px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
         }
     }
     
-    .first-elements, .second-elements, .third-elements, .fourth-elements {
-        width: 100%;
+}
+
+.product-features {
+    margin-bottom: 25px;
+}
+
+.product-features-wrapper {
+    margin-bottom: 20px;
+    .product {
+        text-align: center;
+    }
+    
+    img {
+        width: 60%;
         margin: 0 auto;
-        float: left;
-        padding: 10px;
-        
-        .element-desc {
-            margin: 10px 0 20px 0;
-        }
-        
-        .element-details-head {
-            background-color: lighten(@black, 70%);
-            color: @white;
-            padding: 5px;
-            
-            
-            .key {
-                padding-left: 5px;
-            }
-            
-            .value {
-               padding-right: 5px;
-            }
-        }
-        
-        .kv-wrapper {
-            float: left;
-            width: 100%;
-            border-bottom: 1px dotted lighten(@black, 75%);
-    
-            .key, .value {
-                font-size: 14px;
-            }
-    
-            .key {
-                float: left;
-                width: 45%;
-                text-align: left;
-                padding-left: 5px;
-        
-                span {
-            
-                }
-            }
-    
-            .value {
-                float: left;
-                width: 55%;
-                text-align: right;
-                padding-right: 5px;
-        
-                img {
-                    float: right;
-                }
-            }
-            
-            a {
-                display: block;
-            }
-        }
-        
-        .key-value-desc {
-            
-            .key, .value, .desc {
-                font-size: 14px;
-            }
-            
-            .key {
-                float: left;
-                width: 30%;
-                padding-left: 5px;
-                text-align: left;
-            }
-            
-            .value {
-                float: left;
-                width: 30%;
-                text-align: center;
-            }
-            
-            .desc {
-                float: left;
-                width: 40%;
-                padding-right: 5px;
-                text-align: right;
-            }
-            
-        }
-        
     }
 }
 
-.emphasis {
-    font-weight: bold;
+.thumbs {
+    width: 100%;
+    margin-bottom: 40px;
 }
 
-// these single images are way larger and need to be scaled look similar to the others.
-.spacers, .o-ring, .nylon-nut{
+.thumb-wrapper {
+    width: 100%;
+    height: 225px;
+    
+    .thumb {
+        width: 20%;
+        float: left;
+    }
     img {
-        max-width: 40%;
-    }
-}
-
-.zinc, .lok-plate-kit  {
-    img {
-        max-width: 70%;
-    }
-}
-
-.bolt-kit-carded {
-    .img-wrapper-two {
         float: left;
-        position: relative;
-        margin: 20px 0;
-        width: 100%;
+        padding: 4px;
+    }
+}
+
+.content-1 {
+    .content-1-wrapper {
+        margin-bottom: 25px;
         
-        .dis-assembled, .assembled {
-            float: left;
-            width: 50%;
+        h4 {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            margin: 0 0 8px;
+            text-transform: uppercase;
         }
         
-        .dis-assembled {
-            img {
-                margin-top: 30%;
-            }
+        ul {
+            margin: 0;
+            padding: 0;
         }
         
-        .assembled {
-            img {
-                padding-left: 12%;
-            }
+        li {
+            display: inline-block;
+            font-size: 21px;
+            font-weight: 600;
+            letter-spacing: -1px;
+            list-style: none;
+            margin: 0 3px 0 0;
+            text-transform: uppercase;
         }
     }
 }
 
-
-
-
-.second-wrapper {
-
+.product-details {
+    .features-title {
+        margin-bottom: 30px;
+    }
+    
+    h5 {
+        font-size: 21px;
+        font-weight: 700;
+        letter-spacing: -1px;
+        margin: 0 0 20px;
+        text-transform: uppercase;
+    }
 }
 
-.rivets {
-    .img-wrapper-two {
+.icons-shop {
+    width: 100%;
+    height: 100px;
+    float: left;
+    margin-bottom: 40px;
+    
+    .icon {
         float: left;
-        position: relative;
-        width: 100%;
-        font-size: 16px;
-        
-        .pop {
-            float: left;
-            width: 50%;
-            
-            .desc {
-                position: absolute;
-                top: 10%;
-                left: 25%;
-                z-index: 1;
-            }
-        }
-        
-        .peen {
-            float: left;
-            width: 50%;
-            
-            .desc {
-                position: absolute;
-                top: 10%;
-                left: 90%;
-                z-index: 1;
-            }
-        }
+        margin-right: 15px;
     }
 }
 
-/* End Brochure Columns
-========================================================================== */
+.product-details {
+    .make-sm-column(6);     // 768px (min)
+}
+
+.page-separator {
+    margin-bottom: 100px;
+}
+
+// GRID DEFINITION
+
+// ************ First Wrapper Column ************
+.product-wrapper {
+    .make-sm-column(6);     // 768px (min)
+}
+
+.product {
+    .make-xs-column(3);
+}
+
+
 //</editor-fold>

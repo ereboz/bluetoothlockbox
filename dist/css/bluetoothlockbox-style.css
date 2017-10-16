@@ -1720,6 +1720,16 @@ body {
 /* ==========================================================================
 ****** Brochure Columns [3] ******
 ========================================================================== */
+@media (min-width: 768px) {
+  .products .product-wrapper:last-child .product-image-wrapper {
+    margin-top: 90px;
+  }
+}
+@media (min-width: 992px) {
+  .products .product-wrapper:last-child .product-image-wrapper {
+    margin-top: 144px;
+  }
+}
 .page-wrapper[class*="lockbox"] {
   font-family: "Roboto", sans-serif;
 }
@@ -1730,8 +1740,6 @@ body {
   margin-bottom: 20px;
   overflow: hidden;
   color: #333;
-  background-color: #f2f2f2;
-  border: 1px dotted #000;
           border-radius: 5px;
 
   -webkit-border-radius: 5px;
@@ -1742,495 +1750,157 @@ body {
     min-height: 275px;
   }
 }
-.page-wrapper[class*="lockbox"] a:link {
-  color: #48c;
-  text-decoration: none;
+@media (min-width: 768px) {
+  .primary div[class$="wrapper"]:last-child {
+    margin-top: 90px;
+  }
 }
-.page-wrapper[class*="lockbox"] a:hover {
-  color: #ffb31a;
-}
-.page-wrapper[class*="lockbox"] a:visited {
-  color: #e69900;
-}
-.page-wrapper[class*="lockbox"] a:active {
-  color: blue;
-}
-.page-wrapper[class*="lockbox"] .topic-sub-heading {
-  width: 100%;
-  max-height: 25px;
-  margin-top: 10px;
-  font-size: 18px;
-  color: #fff;
-  text-align: center;
-  background-color: #595959;
-}
-.page-wrapper[class*="lockbox"] .page-separator {
-  margin-bottom: 40px;
-}
-.bluetooth-lockbox div[class$="wrapper"] {
-  margin-bottom: 15px;
+@media (min-width: 992px) {
+  .primary div[class$="wrapper"]:last-child {
+    margin-top: 144px;
+  }
 }
 .page-title {
   margin: 0 0 15px 0;
   font-size: 20px;
   text-align: center;
 }
-.first-wrapper {
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
 @media (min-width: 768px) {
-  .first-wrapper {
-    float: left;
-    width: 50%;
+  .product-wrapper {
+    min-height: 547px;
   }
 }
-.second-wrapper {
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+.product-wrapper:first-child {
+  border-right: 1px solid #d9d9d9;
 }
-@media (min-width: 768px) {
-  .second-wrapper {
-    float: left;
-    width: 50%;
-  }
-}
-.third-wrapper {
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-@media (min-width: 768px) {
-  .third-wrapper {
-    float: left;
-    width: 25%;
-  }
-}
-.fourth-wrapper {
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-@media (min-width: 768px) {
-  .fourth-wrapper {
-    float: left;
-    width: 25%;
-  }
-}
-@media (min-width: 992px) {
-  .first-wrapper,
-  .second-wrapper,
-  .third-wrapper,
-  .fourth-wrapper {
-    min-height: 400px;
-  }
-}
-.first-wrapper .img-wrapper img,
-.second-wrapper .img-wrapper img,
-.third-wrapper .img-wrapper img,
-.fourth-wrapper .img-wrapper img {
-  margin: 25px auto;
-}
-.first-wrapper .first-elements,
-.second-wrapper .first-elements,
-.third-wrapper .first-elements,
-.fourth-wrapper .first-elements,
-.first-wrapper .second-elements,
-.second-wrapper .second-elements,
-.third-wrapper .second-elements,
-.fourth-wrapper .second-elements,
-.first-wrapper .third-elements,
-.second-wrapper .third-elements,
-.third-wrapper .third-elements,
-.fourth-wrapper .third-elements,
-.first-wrapper .fourth-elements,
-.second-wrapper .fourth-elements,
-.third-wrapper .fourth-elements,
-.fourth-wrapper .fourth-elements {
+.primary .product-image-wrapper {
   float: left;
-  width: 100%;
-  padding: 10px;
-  margin: 0 auto;
+  width: 50%;
 }
-.first-wrapper .first-elements .element-desc,
-.second-wrapper .first-elements .element-desc,
-.third-wrapper .first-elements .element-desc,
-.fourth-wrapper .first-elements .element-desc,
-.first-wrapper .second-elements .element-desc,
-.second-wrapper .second-elements .element-desc,
-.third-wrapper .second-elements .element-desc,
-.fourth-wrapper .second-elements .element-desc,
-.first-wrapper .third-elements .element-desc,
-.second-wrapper .third-elements .element-desc,
-.third-wrapper .third-elements .element-desc,
-.fourth-wrapper .third-elements .element-desc,
-.first-wrapper .fourth-elements .element-desc,
-.second-wrapper .fourth-elements .element-desc,
-.third-wrapper .fourth-elements .element-desc,
-.fourth-wrapper .fourth-elements .element-desc {
-  margin: 10px 0 20px 0;
-}
-.first-wrapper .first-elements .element-details-head,
-.second-wrapper .first-elements .element-details-head,
-.third-wrapper .first-elements .element-details-head,
-.fourth-wrapper .first-elements .element-details-head,
-.first-wrapper .second-elements .element-details-head,
-.second-wrapper .second-elements .element-details-head,
-.third-wrapper .second-elements .element-details-head,
-.fourth-wrapper .second-elements .element-details-head,
-.first-wrapper .third-elements .element-details-head,
-.second-wrapper .third-elements .element-details-head,
-.third-wrapper .third-elements .element-details-head,
-.fourth-wrapper .third-elements .element-details-head,
-.first-wrapper .fourth-elements .element-details-head,
-.second-wrapper .fourth-elements .element-details-head,
-.third-wrapper .fourth-elements .element-details-head,
-.fourth-wrapper .fourth-elements .element-details-head {
-  padding: 5px;
-  color: #fff;
-  background-color: #b3b3b3;
-}
-.first-wrapper .first-elements .element-details-head .key,
-.second-wrapper .first-elements .element-details-head .key,
-.third-wrapper .first-elements .element-details-head .key,
-.fourth-wrapper .first-elements .element-details-head .key,
-.first-wrapper .second-elements .element-details-head .key,
-.second-wrapper .second-elements .element-details-head .key,
-.third-wrapper .second-elements .element-details-head .key,
-.fourth-wrapper .second-elements .element-details-head .key,
-.first-wrapper .third-elements .element-details-head .key,
-.second-wrapper .third-elements .element-details-head .key,
-.third-wrapper .third-elements .element-details-head .key,
-.fourth-wrapper .third-elements .element-details-head .key,
-.first-wrapper .fourth-elements .element-details-head .key,
-.second-wrapper .fourth-elements .element-details-head .key,
-.third-wrapper .fourth-elements .element-details-head .key,
-.fourth-wrapper .fourth-elements .element-details-head .key {
-  padding-left: 5px;
-}
-.first-wrapper .first-elements .element-details-head .value,
-.second-wrapper .first-elements .element-details-head .value,
-.third-wrapper .first-elements .element-details-head .value,
-.fourth-wrapper .first-elements .element-details-head .value,
-.first-wrapper .second-elements .element-details-head .value,
-.second-wrapper .second-elements .element-details-head .value,
-.third-wrapper .second-elements .element-details-head .value,
-.fourth-wrapper .second-elements .element-details-head .value,
-.first-wrapper .third-elements .element-details-head .value,
-.second-wrapper .third-elements .element-details-head .value,
-.third-wrapper .third-elements .element-details-head .value,
-.fourth-wrapper .third-elements .element-details-head .value,
-.first-wrapper .fourth-elements .element-details-head .value,
-.second-wrapper .fourth-elements .element-details-head .value,
-.third-wrapper .fourth-elements .element-details-head .value,
-.fourth-wrapper .fourth-elements .element-details-head .value {
-  padding-right: 5px;
-}
-.first-wrapper .first-elements .kv-wrapper,
-.second-wrapper .first-elements .kv-wrapper,
-.third-wrapper .first-elements .kv-wrapper,
-.fourth-wrapper .first-elements .kv-wrapper,
-.first-wrapper .second-elements .kv-wrapper,
-.second-wrapper .second-elements .kv-wrapper,
-.third-wrapper .second-elements .kv-wrapper,
-.fourth-wrapper .second-elements .kv-wrapper,
-.first-wrapper .third-elements .kv-wrapper,
-.second-wrapper .third-elements .kv-wrapper,
-.third-wrapper .third-elements .kv-wrapper,
-.fourth-wrapper .third-elements .kv-wrapper,
-.first-wrapper .fourth-elements .kv-wrapper,
-.second-wrapper .fourth-elements .kv-wrapper,
-.third-wrapper .fourth-elements .kv-wrapper,
-.fourth-wrapper .fourth-elements .kv-wrapper {
+.primary .product-desc-wrapper {
   float: left;
-  width: 100%;
-  border-bottom: 1px dotted #bfbfbf;
+  width: 50%;
 }
-.first-wrapper .first-elements .kv-wrapper .key,
-.second-wrapper .first-elements .kv-wrapper .key,
-.third-wrapper .first-elements .kv-wrapper .key,
-.fourth-wrapper .first-elements .kv-wrapper .key,
-.first-wrapper .second-elements .kv-wrapper .key,
-.second-wrapper .second-elements .kv-wrapper .key,
-.third-wrapper .second-elements .kv-wrapper .key,
-.fourth-wrapper .second-elements .kv-wrapper .key,
-.first-wrapper .third-elements .kv-wrapper .key,
-.second-wrapper .third-elements .kv-wrapper .key,
-.third-wrapper .third-elements .kv-wrapper .key,
-.fourth-wrapper .third-elements .kv-wrapper .key,
-.first-wrapper .fourth-elements .kv-wrapper .key,
-.second-wrapper .fourth-elements .kv-wrapper .key,
-.third-wrapper .fourth-elements .kv-wrapper .key,
-.fourth-wrapper .fourth-elements .kv-wrapper .key,
-.first-wrapper .first-elements .kv-wrapper .value,
-.second-wrapper .first-elements .kv-wrapper .value,
-.third-wrapper .first-elements .kv-wrapper .value,
-.fourth-wrapper .first-elements .kv-wrapper .value,
-.first-wrapper .second-elements .kv-wrapper .value,
-.second-wrapper .second-elements .kv-wrapper .value,
-.third-wrapper .second-elements .kv-wrapper .value,
-.fourth-wrapper .second-elements .kv-wrapper .value,
-.first-wrapper .third-elements .kv-wrapper .value,
-.second-wrapper .third-elements .kv-wrapper .value,
-.third-wrapper .third-elements .kv-wrapper .value,
-.fourth-wrapper .third-elements .kv-wrapper .value,
-.first-wrapper .fourth-elements .kv-wrapper .value,
-.second-wrapper .fourth-elements .kv-wrapper .value,
-.third-wrapper .fourth-elements .kv-wrapper .value,
-.fourth-wrapper .fourth-elements .kv-wrapper .value {
-  font-size: 14px;
-}
-.first-wrapper .first-elements .kv-wrapper .key,
-.second-wrapper .first-elements .kv-wrapper .key,
-.third-wrapper .first-elements .kv-wrapper .key,
-.fourth-wrapper .first-elements .kv-wrapper .key,
-.first-wrapper .second-elements .kv-wrapper .key,
-.second-wrapper .second-elements .kv-wrapper .key,
-.third-wrapper .second-elements .kv-wrapper .key,
-.fourth-wrapper .second-elements .kv-wrapper .key,
-.first-wrapper .third-elements .kv-wrapper .key,
-.second-wrapper .third-elements .kv-wrapper .key,
-.third-wrapper .third-elements .kv-wrapper .key,
-.fourth-wrapper .third-elements .kv-wrapper .key,
-.first-wrapper .fourth-elements .kv-wrapper .key,
-.second-wrapper .fourth-elements .kv-wrapper .key,
-.third-wrapper .fourth-elements .kv-wrapper .key,
-.fourth-wrapper .fourth-elements .kv-wrapper .key {
-  float: left;
-  width: 45%;
-  padding-left: 5px;
-  text-align: left;
-}
-.first-wrapper .first-elements .kv-wrapper .value,
-.second-wrapper .first-elements .kv-wrapper .value,
-.third-wrapper .first-elements .kv-wrapper .value,
-.fourth-wrapper .first-elements .kv-wrapper .value,
-.first-wrapper .second-elements .kv-wrapper .value,
-.second-wrapper .second-elements .kv-wrapper .value,
-.third-wrapper .second-elements .kv-wrapper .value,
-.fourth-wrapper .second-elements .kv-wrapper .value,
-.first-wrapper .third-elements .kv-wrapper .value,
-.second-wrapper .third-elements .kv-wrapper .value,
-.third-wrapper .third-elements .kv-wrapper .value,
-.fourth-wrapper .third-elements .kv-wrapper .value,
-.first-wrapper .fourth-elements .kv-wrapper .value,
-.second-wrapper .fourth-elements .kv-wrapper .value,
-.third-wrapper .fourth-elements .kv-wrapper .value,
-.fourth-wrapper .fourth-elements .kv-wrapper .value {
-  float: left;
-  width: 55%;
-  padding-right: 5px;
-  text-align: right;
-}
-.first-wrapper .first-elements .kv-wrapper .value img,
-.second-wrapper .first-elements .kv-wrapper .value img,
-.third-wrapper .first-elements .kv-wrapper .value img,
-.fourth-wrapper .first-elements .kv-wrapper .value img,
-.first-wrapper .second-elements .kv-wrapper .value img,
-.second-wrapper .second-elements .kv-wrapper .value img,
-.third-wrapper .second-elements .kv-wrapper .value img,
-.fourth-wrapper .second-elements .kv-wrapper .value img,
-.first-wrapper .third-elements .kv-wrapper .value img,
-.second-wrapper .third-elements .kv-wrapper .value img,
-.third-wrapper .third-elements .kv-wrapper .value img,
-.fourth-wrapper .third-elements .kv-wrapper .value img,
-.first-wrapper .fourth-elements .kv-wrapper .value img,
-.second-wrapper .fourth-elements .kv-wrapper .value img,
-.third-wrapper .fourth-elements .kv-wrapper .value img,
-.fourth-wrapper .fourth-elements .kv-wrapper .value img {
-  float: right;
-}
-.first-wrapper .first-elements .kv-wrapper a,
-.second-wrapper .first-elements .kv-wrapper a,
-.third-wrapper .first-elements .kv-wrapper a,
-.fourth-wrapper .first-elements .kv-wrapper a,
-.first-wrapper .second-elements .kv-wrapper a,
-.second-wrapper .second-elements .kv-wrapper a,
-.third-wrapper .second-elements .kv-wrapper a,
-.fourth-wrapper .second-elements .kv-wrapper a,
-.first-wrapper .third-elements .kv-wrapper a,
-.second-wrapper .third-elements .kv-wrapper a,
-.third-wrapper .third-elements .kv-wrapper a,
-.fourth-wrapper .third-elements .kv-wrapper a,
-.first-wrapper .fourth-elements .kv-wrapper a,
-.second-wrapper .fourth-elements .kv-wrapper a,
-.third-wrapper .fourth-elements .kv-wrapper a,
-.fourth-wrapper .fourth-elements .kv-wrapper a {
+.primary .product-desc-wrapper span {
   display: block;
 }
-.first-wrapper .first-elements .key-value-desc .key,
-.second-wrapper .first-elements .key-value-desc .key,
-.third-wrapper .first-elements .key-value-desc .key,
-.fourth-wrapper .first-elements .key-value-desc .key,
-.first-wrapper .second-elements .key-value-desc .key,
-.second-wrapper .second-elements .key-value-desc .key,
-.third-wrapper .second-elements .key-value-desc .key,
-.fourth-wrapper .second-elements .key-value-desc .key,
-.first-wrapper .third-elements .key-value-desc .key,
-.second-wrapper .third-elements .key-value-desc .key,
-.third-wrapper .third-elements .key-value-desc .key,
-.fourth-wrapper .third-elements .key-value-desc .key,
-.first-wrapper .fourth-elements .key-value-desc .key,
-.second-wrapper .fourth-elements .key-value-desc .key,
-.third-wrapper .fourth-elements .key-value-desc .key,
-.fourth-wrapper .fourth-elements .key-value-desc .key,
-.first-wrapper .first-elements .key-value-desc .value,
-.second-wrapper .first-elements .key-value-desc .value,
-.third-wrapper .first-elements .key-value-desc .value,
-.fourth-wrapper .first-elements .key-value-desc .value,
-.first-wrapper .second-elements .key-value-desc .value,
-.second-wrapper .second-elements .key-value-desc .value,
-.third-wrapper .second-elements .key-value-desc .value,
-.fourth-wrapper .second-elements .key-value-desc .value,
-.first-wrapper .third-elements .key-value-desc .value,
-.second-wrapper .third-elements .key-value-desc .value,
-.third-wrapper .third-elements .key-value-desc .value,
-.fourth-wrapper .third-elements .key-value-desc .value,
-.first-wrapper .fourth-elements .key-value-desc .value,
-.second-wrapper .fourth-elements .key-value-desc .value,
-.third-wrapper .fourth-elements .key-value-desc .value,
-.fourth-wrapper .fourth-elements .key-value-desc .value,
-.first-wrapper .first-elements .key-value-desc .desc,
-.second-wrapper .first-elements .key-value-desc .desc,
-.third-wrapper .first-elements .key-value-desc .desc,
-.fourth-wrapper .first-elements .key-value-desc .desc,
-.first-wrapper .second-elements .key-value-desc .desc,
-.second-wrapper .second-elements .key-value-desc .desc,
-.third-wrapper .second-elements .key-value-desc .desc,
-.fourth-wrapper .second-elements .key-value-desc .desc,
-.first-wrapper .third-elements .key-value-desc .desc,
-.second-wrapper .third-elements .key-value-desc .desc,
-.third-wrapper .third-elements .key-value-desc .desc,
-.fourth-wrapper .third-elements .key-value-desc .desc,
-.first-wrapper .fourth-elements .key-value-desc .desc,
-.second-wrapper .fourth-elements .key-value-desc .desc,
-.third-wrapper .fourth-elements .key-value-desc .desc,
-.fourth-wrapper .fourth-elements .key-value-desc .desc {
-  font-size: 14px;
+.primary .product-desc-wrapper .product-desc {
+  padding: 0 50px;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 32px;
+  text-transform: uppercase;
 }
-.first-wrapper .first-elements .key-value-desc .key,
-.second-wrapper .first-elements .key-value-desc .key,
-.third-wrapper .first-elements .key-value-desc .key,
-.fourth-wrapper .first-elements .key-value-desc .key,
-.first-wrapper .second-elements .key-value-desc .key,
-.second-wrapper .second-elements .key-value-desc .key,
-.third-wrapper .second-elements .key-value-desc .key,
-.fourth-wrapper .second-elements .key-value-desc .key,
-.first-wrapper .third-elements .key-value-desc .key,
-.second-wrapper .third-elements .key-value-desc .key,
-.third-wrapper .third-elements .key-value-desc .key,
-.fourth-wrapper .third-elements .key-value-desc .key,
-.first-wrapper .fourth-elements .key-value-desc .key,
-.second-wrapper .fourth-elements .key-value-desc .key,
-.third-wrapper .fourth-elements .key-value-desc .key,
-.fourth-wrapper .fourth-elements .key-value-desc .key {
-  float: left;
-  width: 30%;
-  padding-left: 5px;
-  text-align: left;
+.primary .product-desc-wrapper .product-desc span:nth-child(2) {
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: 700;
 }
-.first-wrapper .first-elements .key-value-desc .value,
-.second-wrapper .first-elements .key-value-desc .value,
-.third-wrapper .first-elements .key-value-desc .value,
-.fourth-wrapper .first-elements .key-value-desc .value,
-.first-wrapper .second-elements .key-value-desc .value,
-.second-wrapper .second-elements .key-value-desc .value,
-.third-wrapper .second-elements .key-value-desc .value,
-.fourth-wrapper .second-elements .key-value-desc .value,
-.first-wrapper .third-elements .key-value-desc .value,
-.second-wrapper .third-elements .key-value-desc .value,
-.third-wrapper .third-elements .key-value-desc .value,
-.fourth-wrapper .third-elements .key-value-desc .value,
-.first-wrapper .fourth-elements .key-value-desc .value,
-.second-wrapper .fourth-elements .key-value-desc .value,
-.third-wrapper .fourth-elements .key-value-desc .value,
-.fourth-wrapper .fourth-elements .key-value-desc .value {
-  float: left;
-  width: 30%;
+.product-features {
+  margin-bottom: 25px;
+}
+.product-features-wrapper {
+  margin-bottom: 20px;
+}
+.product-features-wrapper .product {
   text-align: center;
 }
-.first-wrapper .first-elements .key-value-desc .desc,
-.second-wrapper .first-elements .key-value-desc .desc,
-.third-wrapper .first-elements .key-value-desc .desc,
-.fourth-wrapper .first-elements .key-value-desc .desc,
-.first-wrapper .second-elements .key-value-desc .desc,
-.second-wrapper .second-elements .key-value-desc .desc,
-.third-wrapper .second-elements .key-value-desc .desc,
-.fourth-wrapper .second-elements .key-value-desc .desc,
-.first-wrapper .third-elements .key-value-desc .desc,
-.second-wrapper .third-elements .key-value-desc .desc,
-.third-wrapper .third-elements .key-value-desc .desc,
-.fourth-wrapper .third-elements .key-value-desc .desc,
-.first-wrapper .fourth-elements .key-value-desc .desc,
-.second-wrapper .fourth-elements .key-value-desc .desc,
-.third-wrapper .fourth-elements .key-value-desc .desc,
-.fourth-wrapper .fourth-elements .key-value-desc .desc {
+.product-features-wrapper img {
+  width: 60%;
+  margin: 0 auto;
+}
+.thumbs {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.thumb-wrapper {
+  width: 100%;
+  height: 225px;
+}
+.thumb-wrapper .thumb {
   float: left;
-  width: 40%;
-  padding-right: 5px;
-  text-align: right;
+  width: 20%;
 }
-.emphasis {
-  font-weight: bold;
+.thumb-wrapper img {
+  float: left;
+  padding: 4px;
 }
-.spacers img,
-.o-ring img,
-.nylon-nut img {
-  max-width: 40%;
+.content-1 .content-1-wrapper {
+  margin-bottom: 25px;
 }
-.zinc img,
-.lok-plate-kit img {
-  max-width: 70%;
+.content-1 .content-1-wrapper h4 {
+  margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1px;
 }
-.bolt-kit-carded .img-wrapper-two {
-  position: relative;
+.content-1 .content-1-wrapper ul {
+  padding: 0;
+  margin: 0;
+}
+.content-1 .content-1-wrapper li {
+  display: inline-block;
+  margin: 0 3px 0 0;
+  font-size: 21px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  list-style: none;
+}
+.product-details .features-title {
+  margin-bottom: 30px;
+}
+.product-details h5 {
+  margin: 0 0 20px;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+.icons-shop {
   float: left;
   width: 100%;
-  margin: 20px 0;
+  height: 100px;
+  margin-bottom: 40px;
 }
-.bolt-kit-carded .img-wrapper-two .dis-assembled,
-.bolt-kit-carded .img-wrapper-two .assembled {
+.icons-shop .icon {
   float: left;
-  width: 50%;
+  margin-right: 15px;
 }
-.bolt-kit-carded .img-wrapper-two .dis-assembled img {
-  margin-top: 30%;
+.product-details {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
-.bolt-kit-carded .img-wrapper-two .assembled img {
-  padding-left: 12%;
+@media (min-width: 768px) {
+  .product-details {
+    float: left;
+    width: 50%;
+  }
 }
-.rivets .img-wrapper-two {
+.page-separator {
+  margin-bottom: 100px;
+}
+.product-wrapper {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  .product-wrapper {
+    float: left;
+    width: 50%;
+  }
+}
+.product {
   position: relative;
   float: left;
-  width: 100%;
-  font-size: 16px;
+  width: 25%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
-.rivets .img-wrapper-two .pop {
-  float: left;
-  width: 50%;
-}
-.rivets .img-wrapper-two .pop .desc {
-  position: absolute;
-  top: 10%;
-  left: 25%;
-  z-index: 1;
-}
-.rivets .img-wrapper-two .peen {
-  float: left;
-  width: 50%;
-}
-.rivets .img-wrapper-two .peen .desc {
-  position: absolute;
-  top: 10%;
-  left: 90%;
-  z-index: 1;
-}
-/* End Brochure Columns
-========================================================================== */
 /*# sourceMappingURL=bluetoothlockbox-style.css.map */
